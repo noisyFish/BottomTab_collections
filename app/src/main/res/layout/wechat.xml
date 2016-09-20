@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WeChatStyles"
+            android:id="@+id/textView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tabbg"
+        android:orientation="horizontal" >
+
+        <com.superyu.bottomtab.wechatstyle.ChangeColorIconWithTextView
+            android:id="@+id/indicator_first"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:color="@color/green"
+            app:icon="@mipmap/chat_normal"
+            app:text="@string/tab1_title"
+            app:text_size="12sp" />
+
+        <com.superyu.bottomtab.wechatstyle.ChangeColorIconWithTextView
+            android:id="@+id/indicator_second"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:color="@color/green"
+            app:icon="@mipmap/contacts_normal"
+            app:text="@string/tab2_title"
+            app:text_size="12sp" />
+
+        <com.superyu.bottomtab.wechatstyle.ChangeColorIconWithTextView
+            android:id="@+id/indicator_third"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:color="@color/green"
+            app:icon="@mipmap/discovery_normal"
+            app:text="@string/tab3_title"
+            app:text_size="12sp" />
+
+        <com.superyu.bottomtab.wechatstyle.ChangeColorIconWithTextView
+            android:id="@+id/indicator_forth"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:color="@color/green"
+            app:icon="@mipmap/me_normal"
+            app:text="@string/tab4_title"
+            app:text_size="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@mipmap/actionbar_search_icon"
+        android:title="@string/action_search"/>
+    <item
+        android:id="@+id/action_group_chat"
+        android:icon="@mipmap/ofm_group_chat_icon"
+        android:title="@string/action_group_chat"/>
+    <item
+        android:id="@+id/action_add_friend"
+        android:icon="@mipmap/ofm_add_icon"
+        android:title="@string/action_add_friend"/>
+    <item
+        android:id="@+id/action_scan"
+        android:icon="@mipmap/ofm_qrcode_icon"
+        android:title="@string/action_scan"/>
+    <item
+        android:id="@+id/action_feed"
+        android:icon="@mipmap/ofm_feedback_icon"
+        android:title="@string/action_feed"/>
+
+</menu>
